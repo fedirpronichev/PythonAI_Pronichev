@@ -76,7 +76,9 @@ class SmartPhone(Computer, Display):
         print(self.calculate())
 
 
-sp = SmartPhone()
+sp = SmartPhone(
+
+)
 sp.print_info()
 
 
