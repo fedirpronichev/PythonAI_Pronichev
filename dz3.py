@@ -6,7 +6,6 @@ class Encryptor:
         self._numbers = numbers
         self._result = self._encrypt()
 
-
     def _encrypt(self):
         operations = {
             "add": sum(self._numbers),
@@ -16,14 +15,11 @@ class Encryptor:
         }
         return operations[random.choice(list(operations.keys()))]
 
-
-
     def _prod(self):
         result = 1
         for num in self._numbers:
             result *= num
         return result
-
 
     def _safe_divide(self):
         if len(self._numbers) > 1 and all(num != 0 for num in self._numbers[1:]):
@@ -33,11 +29,8 @@ class Encryptor:
             return result
         return "Invalid operation"
 
-
     def __str__(self):
         return f"Encrypted result: {self._result}"
-
-
 
 
 encryptor = Encryptor(10, 5, 2)
