@@ -78,4 +78,4 @@ class Helper:
         return f"I will help you with your {self.work}. Afterwards I will help you with {work}."
 
 helper = Helper("homework")
-print(helper("cleaning"))
+print(helper("cleaning"))ZeroDivisionError
