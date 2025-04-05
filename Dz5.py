@@ -18,7 +18,6 @@ def calculator_decorator(func):
 def calculate(expression):
     return eval(expression)
 
-# Приклади виклику
 calculate("10 + 5")
 calculate("10 / 0")
 calculate("10 +")
